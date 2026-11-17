@@ -1,0 +1,18 @@
+# Publishes a release when a version tag is pushed, attaching the app file held on the dist branch.
+name: Release
+on:
+  push:
+    tags: ['v*']
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: dist
+      - name: Publish the release
+        run: gh release create "$GITHUB_REF_NAME" TotalClean.apk --title "TotalClean ${GITHUB_REF_NAME#v}" --notes-file NOTES.md
+        env:
+          GH_TOKEN: ${{ github.token }}
