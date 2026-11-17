@@ -24,4 +24,17 @@ ul,ol{padding-left:22px}
 li{margin:6px 0}
 footer{border-top:1px solid #1d2530;max-width:1040px;margin:0 auto;padding:20px;font-size:14px}
 footer p{color:#9aa6b2;margin:4px 0}
+.mapps{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(min(100%,380px),1fr))}
+.mapp{margin:0;display:flex;flex-direction:column;background:#141a21;border:1px solid #1d2530;border-radius:20px;overflow:hidden}
+.mapp-cover{position:relative;height:104px;background:linear-gradient(135deg,var(--b),var(--b2));overflow:hidden}
+.mapp-cover svg{position:absolute;right:-19px;top:-26px;width:176px;height:176px;max-width:none;opacity:.22}
+.mapp-body{display:flex;flex-direction:column;flex:1;padding:0 22px 22px}
+.mapp-icon{width:68px;height:68px;border-radius:16px;margin-top:-34px;position:relative;box-shadow:0 0 0 4px #141a21,0 0 0 5px rgba(255,255,255,.1)}
+.mapp h2{font-size:24px;margin:14px 0 2px}
+.mapp-kind{color:#9aa6b2;margin:0 0 10px;font-size:15px}
+.mapp-say{margin:0 0 18px;font-size:16px}
+.mapp-go{display:flex;flex-wrap:wrap;align-items:center;gap:10px 20px;margin:auto 0 0;font-weight:700}
+.mapp-go .button{margin:0;padding:11px 20px;font-size:15px}
+.mapp-site{font-size:15px}
+.mapp-needs{font-size:14px;color:#9aa6b2;margin:14px 0 0}
 @media (max-width:600px){nav{margin-left:0}}
