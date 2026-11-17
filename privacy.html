@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy · TotalClean</title>
+<meta name="description" content="What TotalClean does with your information: nothing is collected by its maker, and the few times it talks to the internet are set out here.">
+<meta name="author" content="Jonathan Jackson">
+<link rel="canonical" href="https://customgpter.github.io/totalclean/privacy.html">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="Privacy · TotalClean">
+<meta property="og:description" content="What TotalClean does with your information: nothing is collected by its maker, and the few times it talks to the internet are set out here.">
+<meta property="og:image" content="https://customgpter.github.io/totalclean/assets/screens.png">
+<meta name="theme-color" content="#0b0f14">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header><a class="brand" href="index.html"><img src="assets/favicon.svg" alt="" width="28" height="28">TotalClean</a><nav><a href="index.html">Home</a><a href="releases.html">Releases</a><a href="more-apps.html">More apps</a><a href="privacy.html" class="on">Privacy</a><a href="terms.html">Terms</a><a href="licences.html">Licences</a></nav></header>
+<main>
+
+<h1>Privacy</h1>
+<p class="small">Last updated 17 November 2026</p>
+<p class="lead">TotalClean has no accounts, no adverts and no analytics. Its maker runs no servers and receives nothing from the app. Everything it works out about your phone stays on your phone.</p>
+<h2>When the app uses the internet</h2>
+<ul>
+<li><strong>Checking for a new version.</strong> The app asks GitHub for the latest release. GitHub sees your internet address, as any website does. This can be switched off in Settings.</li>
+<li><strong>Google Drive, only if you connect it.</strong> Files you choose are sent to your own Google Drive. TotalClean asks Google for the narrowest permission there is: it can see and change only the files and folders it created itself. It cannot see anything else in your Drive. Sign-in is handled by Google on your phone; TotalClean never sees your password.</li>
+<li><strong>Look inside pictures, only if you use it.</strong> This reads the text in your photos to find private papers. The reading is done on the phone by Google's ML Kit text recognition. Your pictures and the text in them are not sent anywhere. ML Kit does send Google figures about how the reader itself performs and how much it is used; Google describes this in the <a href="https://developers.google.com/ml-kit/terms">ML Kit terms</a>. TotalClean keeps only a verdict for each photo, such as "Passport", never the text.</li>
+<li><strong>Links you tap,</strong> such as this site or another app's page, open in your browser.</li>
+</ul>
+<h2>What is kept on the phone</h2>
+<ul>
+<li>Your settings and choices.</li>
+<li>The safety bin, in a folder named .TotalClean in the phone's storage, for 30 days.</li>
+<li>The vault, in the same folder, encrypted with your PIN. Nobody, including the maker of the app, can open it or reset the PIN. A forgotten PIN means the contents are lost.</li>
+<li>A daily note of free space and app sizes, used for the storage forecast, and a battery temperature log if you switch monitoring on.</li>
+<li>A record of files sent to Google Drive, so they can be checked and brought back.</li>
+</ul>
+<p>Removing the app removes all of this except the .TotalClean folder, which is left so that the bin and the vault survive a reinstall. You can delete that folder yourself.</p>
+<h2>What the permissions are for</h2>
+<ul>
+<li><strong>All files access:</strong> to find and remove files across storage. This is the core of a cleaner.</li>
+<li><strong>Usage access:</strong> to measure each app's size and cache, and to show screen time, unused apps and notification counts. None of it leaves the phone.</li>
+<li><strong>List of installed apps:</strong> to show apps, find leftovers from removed apps and run the security checks.</li>
+<li><strong>Accessibility (the TotalClean helper):</strong> Android gives one app no direct way to clear another app's cache or stop it. When you start Deep Clean, Sleep Mode or Browser Cleaner, the helper opens each app's page in Settings and presses Clear cache or Force stop for you. It looks at the Settings app only, and only while a run you started is going. It never reads other apps, what you type or your passwords, and nothing it sees is stored or sent.</li>
+<li><strong>Notifications:</strong> for the weekly report, the low-space warning and progress of Drive transfers.</li>
+<li><strong>Fingerprint:</strong> as the quick way into the vault and for the optional lock on the app. Your fingerprint never leaves the phone's secure hardware.</li>
+</ul>
+<h2>Children</h2>
+<p>TotalClean is a general tool and is not aimed at children. It collects nothing from anyone.</p>
+<h2>Changes and questions</h2>
+<p>If this page changes, the date at the top changes with it. Questions and problems go to the <a href="https://github.com/CustomGPTer/totalclean/issues">issues page</a>.</p>
+<p class="small">TotalClean is made by Jonathan Jackson in the United Kingdom.</p>
+
+</main>
+<footer><p>TotalClean is free. No adverts, no accounts, no paid version.</p><p>Made by Jonathan Jackson · <a href="https://github.com/CustomGPTer/totalclean">Source code</a> · <a href="https://github.com/CustomGPTer/totalclean/issues">Report a problem</a></p></footer>
+</body>
+</html>

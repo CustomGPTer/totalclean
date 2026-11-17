@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://customgpter.github.io/totalclean/sitemap.xml
