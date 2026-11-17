@@ -1,8 +1,12 @@
-# Publishes a release when a version tag is pushed, attaching the app file held on the dist branch.
+# Publishes a release with the app file held on the dist branch.
+# Run it from the Actions tab and give the version, such as 1.0.
 name: Release
 on:
-  push:
-    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Version to release, such as 1.0
+        required: true
 permissions:
   contents: write
 jobs:
@@ -13,6 +17,6 @@ jobs:
         with:
           ref: dist
       - name: Publish the release
-        run: gh release create "$GITHUB_REF_NAME" TotalClean.apk --title "TotalClean ${GITHUB_REF_NAME#v}" --notes-file NOTES.md
+        run: gh release create "v${{ inputs.version }}" TotalClean.apk --target main --title "TotalClean ${{ inputs.version }}" --notes-file NOTES.md
         env:
           GH_TOKEN: ${{ github.token }}
