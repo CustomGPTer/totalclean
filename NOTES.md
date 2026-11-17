@@ -1,10 +1,6 @@
-First public release.
+Usage access and the helper are locked by Android for apps installed from a download rather than the Play Store.
 
-- Quick Clean with a reason and a safety rating for every category, and a 30-day safety bin
-- Deep Clean, Sleep Mode and Browser Cleaner through the TotalClean helper
-- Storage, Apps, storage map, chat media, similar and bad photos, exact duplicates, swipe review, Photo Optimiser
-- Google Drive transfers, checked against the Drive copy before anything is removed
-- Automatic cleaning with rules, weekly report, low-space warning, storage forecast
-- Security tips, device health, encrypted vault, private-file finder, widget and quick settings tile
+- The app now sets out the three steps to unlock them, with a button for each: try the switch once, choose Allow restricted settings on TotalClean's app page, then switch it on
+- The steps show on the welcome page, the Apps list, Deep Clean, Sleep Mode, Browser Cleaner and in Settings
 
-Android 11 or newer. Download TotalClean.apk below and open it to install.
+Android 11 or newer. Download TotalClean.apk below and open it to install. It installs over 1.0.
