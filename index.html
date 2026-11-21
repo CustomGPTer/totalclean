@@ -1,61 +1,144 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-GB">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TotalClean: a free phone cleaner for Android</title>
-<meta name="description" content="TotalClean frees space on Android with true numbers and an undo for everything. Free, with no adverts, no accounts and no tracking.">
+<title>TotalClean: free up your phone, and take back anything you want</title>
+<meta name="description" content="TotalClean is a free Android phone cleaner that tells the truth about space. Every figure is measured after the clean, your own files wait 30 days in a safety bin, and nothing about you is collected. No adverts.">
 <meta name="author" content="Jonathan Jackson">
 <link rel="canonical" href="https://customgpter.github.io/totalclean/">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<meta property="og:title" content="TotalClean: a free phone cleaner for Android">
-<meta property="og:description" content="TotalClean frees space on Android with true numbers and an undo for everything. Free, with no adverts, no accounts and no tracking.">
-<meta property="og:image" content="https://customgpter.github.io/totalclean/assets/screens.png">
-<meta name="theme-color" content="#0b0f14">
-<link rel="stylesheet" href="assets/site.css">
+<meta name="theme-color" content="#f2f6f8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b0f14" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TotalClean">
+<meta property="og:title" content="TotalClean: free up your phone, and take back anything you want">
+<meta property="og:description" content="TotalClean is a free Android phone cleaner that tells the truth about space. Every figure is measured after the clean, your own files wait 30 days in a safety bin, and nothing about you is collected. No adverts.">
+<meta property="og:url" content="https://customgpter.github.io/totalclean/">
+<meta property="og:image" content="https://customgpter.github.io/totalclean/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="TotalClean&#x27;s home screen showing free space and a Quick Clean button">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
+<link rel="preload" href="./assets/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="./assets/fonts/atkinson-hyperlegible-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="./assets/site.css?v=1">
+<link rel="stylesheet" href="./assets/house.css?v=1">
+<link rel="stylesheet" href="./assets/apps-list.css?v=1">
+<script src="./assets/apps-list.js?v=1" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"TotalClean","url":"https://customgpter.github.io/totalclean/","description":"TotalClean is a free Android phone cleaner that tells the truth about space. Every figure is measured after the clean, your own files wait 30 days in a safety bin, and nothing about you is collected. No adverts.","applicationCategory":"UtilitiesApplication","operatingSystem":"Android 11 or later","softwareVersion":"1.0.1","downloadUrl":"https://github.com/CustomGPTer/totalclean/releases/latest/download/TotalClean.apk","releaseNotes":"https://customgpter.github.io/totalclean/releases.html","offers":{"@type":"Offer","price":"0","priceCurrency":"GBP"},"inLanguage":"en-GB","image":"https://customgpter.github.io/totalclean/assets/og.png","featureList":["Quick Clean","Deep Clean","Safety bin","Automatic cleaning and rules","Similar shots","Swipe review and Photo Optimiser","Chat media","Google Drive","Storage forecast","Storage map","Sleep Mode","Vault"],"author":{"@type":"Person","name":"Jonathan Jackson"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is TotalClean really free?","acceptedAnswer":{"@type":"Answer","text":"Yes. There is no paid version, no subscription and no adverts. See the comparison."}},{"@type":"Question","name":"Will it delete my photos?","acceptedAnswer":{"@type":"Answer","text":"Only if you tick them, or set a rule that covers them. Your own files go to the safety bin for 30 days and come back with one tap."}},{"@type":"Question","name":"Is there a memory booster?","acceptedAnswer":{"@type":"Answer","text":"No. Emptying memory by hand slows a modern phone down, so TotalClean does not offer it."}},{"@type":"Question","name":"Does it scan for viruses?","acceptedAnswer":{"@type":"Answer","text":"No. Security tips check the phone's own settings. They do not scan apps for malware."}},{"@type":"Question","name":"Why does it ask for so much access?","acceptedAnswer":{"@type":"Answer","text":"A cleaner needs wide access to storage to find and remove files. Usage access measures each app's size and cache. None of it leaves the phone."}},{"@type":"Question","name":"What is the helper?","acceptedAnswer":{"@type":"Answer","text":"Deep Clean, Sleep Mode and Browser Cleaner use a helper in Accessibility settings. The app shows how to switch it on. On Android 17 it cannot run while Advanced Protection is on."}},{"@type":"Question","name":"What if I forget my vault PIN?","acceptedAnswer":{"@type":"Answer","text":"Nobody can open the vault without it, including the maker of the app. A forgotten PIN means the files in the vault cannot be got back."}},{"@type":"Question","name":"How do I update TotalClean?","acceptedAnswer":{"@type":"Answer","text":"The app tells you when a new version is out. Download it from this site and install it over the old one; your settings and bin stay."}}]}</script>
 </head>
 <body>
-<header><a class="brand" href="index.html"><img src="assets/favicon.svg" alt="" width="28" height="28">TotalClean</a><nav><a href="index.html" class="on">Home</a><a href="releases.html">Releases</a><a href="more-apps.html">More apps</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="licences.html">Licences</a></nav></header>
-<main>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<a class="brand" href="./" aria-label="TotalClean home"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0b0f14"/><circle cx="32" cy="32" r="19" fill="none" stroke="#35d0f2" stroke-width="6" stroke-linecap="round" stroke-dasharray="92 28" transform="rotate(-210 32 32)"/><path d="M32 22l3 7 7 3-7 3-3 7-3-7-7-3 7-3z" fill="#e9eef3"/></svg><span>TotalClean</span></a>
+<nav aria-label="Main"><ul><li><a href="./#features">Features</a></li><li><a href="./compare.html">Compare</a></li><li><a href="./releases.html">Releases</a></li><li><a class="more-apps" href="./more-apps.html"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.6"/></svg>More apps</a></li></ul></nav>
+<a class="button small" href="https://github.com/CustomGPTer/totalclean/releases/latest/download/TotalClean.apk"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10.5l5 5 5-5"/><path d="M5 20h14"/></svg>Download</a>
+</div>
+</header>
+<main id="main">
+<div class="hero">
+<div class="wrap hero-grid">
+<div class="hero-copy">
+<h1>Free up your phone. See exactly what went.</h1>
+<p class="lede">TotalClean is a phone cleaner for Android that tells the truth about space. Every figure is measured after the clean, not guessed before it.</p><p class="lede">Junk is ticked for you; your own files never are. Anything of yours that is removed waits 30 days in a safety bin, and nothing about you or your phone is collected.</p>
 
-<section class="hero">
-<h1>Free up your phone. See exactly what went, and take it back if you want.</h1>
-<p class="lead">TotalClean is a phone cleaner for Android that tells the truth about space. Every figure is measured after the clean, your own files go to a 30-day safety bin, and nothing about you or your phone is collected.</p>
-<p><a class="button" href="https://github.com/CustomGPTer/totalclean/releases/latest/download/TotalClean.apk">Download TotalClean</a> <span class="small">Android 11 or newer · about 23 MB · <a href="releases.html">what is new</a></span></p>
-<img class="shots" src="assets/screens.png" alt="TotalClean's home screen, automatic cleaning, security tips, vault, private files and device health screens" width="1458" height="2088">
+<p class="get" id="download"><a class="button" href="https://github.com/CustomGPTer/totalclean/releases/latest/download/TotalClean.apk"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10.5l5 5 5-5"/><path d="M5 20h14"/></svg>Download for Android</a><a class="aside" href="#install">How to install</a></p>
+<ul class="pills"><li>Version 1.0.1</li><li>Android 11 or later</li><li>23.5 MB</li></ul>
+<p class="facts">Free, with nothing to unlock. No adverts, no account with the developer, no tracking. <a href="compare.html">Compare</a> or read the <a href="releases.html">release notes</a>.</p>
+<p class="facts">Chrome may say the file might be harmful. It shows this for app files that do not come from Google Play. Choose Download anyway.</p>
+</div>
+<div class="hero-phone"><div class="phone"><img src="./assets/screens/home.png" alt="Home: free space, phone health and the biggest savings." width="393" height="852" fetchpriority="high"></div></div>
+</div>
+</div>
+
+<section class="promises" aria-label="In short">
+<div class="wrap"><ul><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8.6 12.4l2.3 2.3 4.5-4.9"/></svg><span><b>No subscription</b><span>Every feature is in the free app.</span></span></li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8.6 12.4l2.3 2.3 4.5-4.9"/></svg><span><b>No adverts</b><span>No upsells and no reminders to open it.</span></span></li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8.6 12.4l2.3 2.3 4.5-4.9"/></svg><span><b>A safety bin</b><span>Your own files wait 30 days.</span></span></li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8.6 12.4l2.3 2.3 4.5-4.9"/></svg><span><b>Real numbers</b><span>Measured after the clean.</span></span></li></ul></div>
 </section>
-<section><h2>What it does</h2>
-<div class="grid">
-<div><h3>Quick Clean</h3><p>Finds caches, advert caches, empty folders, spare install files, leftovers from removed apps and more. Junk is ticked for you; your own files never are.</p></div>
-<div><h3>Deep Clean</h3><p>Clears every app's hidden cache in one go, then measures how much really went.</p></div>
-<div><h3>Safety bin</h3><p>Anything of yours that is removed waits 30 days in the bin and goes back with one tap.</p></div>
-<div><h3>Photos and media</h3><p>Similar shots with the sharpest picked out, blurred and dark photos, exact duplicates, a swipe review and a Photo Optimiser.</p></div>
-<div><h3>Google Drive</h3><p>Move files to a tidy TotalClean folder in your own Drive. Each one is checked against its Drive copy before it is offered for removal.</p></div>
-<div><h3>Sleep Mode</h3><p>Stops the apps you choose. Messaging, alarm, banking, health and security apps start off protected.</p></div>
-<div><h3>Automatic cleaning and rules</h3><p>Off until you switch it on. Junk only, overnight, plus rules such as screenshots older than 30 days.</p></div>
-<div><h3>Vault and private files</h3><p>Finds photos of passports, bank cards and other papers and locks them in an encrypted vault behind a PIN only you know.</p></div>
-<div><h3>Security tips</h3><p>Checks of the phone's own settings and apps, each with a button that takes you to the fix.</p></div>
-<div><h3>Storage forecast</h3><p>How fast storage is filling, when it will be full, and which apps are growing.</p></div>
-<div><h3>Storage map and chat media</h3><p>Walk through storage folder by folder, or clear chat pictures, videos and voice notes by type.</p></div>
-<div><h3>Widget and quick tile</h3><p>Free space on the home screen and a one-tap clean in the notification shade.</p></div>
-</div></section>
-<section><h2>What it will not do</h2>
-<ul>
-<li><strong>No memory booster.</strong> Emptying memory by hand slows a modern phone down.</li>
-<li><strong>No invented numbers.</strong> If Android will not let an app reach something, TotalClean says so.</li>
-<li><strong>No adverts, upsells or reminders to open the app.</strong> It sends a weekly report and a low-space warning, and both can be switched off.</li>
-<li><strong>No antivirus claims.</strong> Security tips check settings. They do not scan apps for malware.</li>
-</ul></section>
-<section><h2>Installing</h2>
-<ol>
-<li>Tap Download and open the file. Android will ask you to allow installs from your browser or file app.</li>
-<li>Play Protect may ask about an app it has not seen. TotalClean asks for wide access to storage because that is what a cleaner needs.</li>
-<li>Usage access and the helper are locked at first, because the app came from a download and not the Play Store. Try to switch TotalClean on once, so your phone shows "Restricted setting". Then open Settings, Apps, TotalClean, tap the three dots at the top right and choose Allow restricted settings. After that the switch works. The app walks you through this with a button for each step.</li>
-<li>For Deep Clean, Sleep Mode and Browser Cleaner the app asks you to switch on its helper in Accessibility settings, and shows you how. On Android 17 the helper cannot run while Advanced Protection is on.</li>
-</ol>
-<p class="small">The app checks this site's releases for a newer version and tells you when there is one. That check can be switched off in Settings.</p></section>
 
+<section id="screens" aria-labelledby="screens-h">
+<div class="wrap">
+<h2 id="screens-h">A look inside</h2>
+<p class="intro">These are the real screens, drawn from the app&#x27;s own code with made-up files. Swipe or scroll sideways to see them all.</p>
+<div class="gallery" tabindex="0" role="region" aria-label="Screens from TotalClean"><figure class="shot"><div class="phone"><img src="./assets/screens/home.png" alt="Home: free space, phone health and the biggest savings." width="393" height="852" loading="eager" decoding="async"></div><figcaption>Home: free space, phone health and the biggest savings.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/quick.png" alt="Quick Clean: junk ticked for you, your own files never." width="393" height="852" loading="eager" decoding="async"></div><figcaption>Quick Clean: junk ticked for you, your own files never.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/report.png" alt="The report: what really went, measured after the clean." width="393" height="852" loading="eager" decoding="async"></div><figcaption>The report: what really went, measured after the clean.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/media.png" alt="Photos and media: similar, poor and duplicate shots." width="393" height="852" loading="eager" decoding="async"></div><figcaption>Photos and media: similar, poor and duplicate shots.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/similar.png" alt="Similar shots, with the sharpest picked out." width="393" height="852" loading="eager" decoding="async"></div><figcaption>Similar shots, with the sharpest picked out.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/sleep.png" alt="Sleep Mode: stop the apps you choose." width="393" height="852" loading="eager" decoding="async"></div><figcaption>Sleep Mode: stop the apps you choose.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/tips.png" alt="Security tips, each with a button to the fix." width="393" height="852" loading="eager" decoding="async"></div><figcaption>Security tips, each with a button to the fix.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/vault.png" alt="The vault, locked behind a PIN only you know." width="393" height="852" loading="eager" decoding="async"></div><figcaption>The vault, locked behind a PIN only you know.</figcaption></figure></div>
+</div>
+</section>
+
+<section id="how" aria-labelledby="how-h">
+<div class="wrap">
+<h2 id="how-h">How it works</h2>
+<p class="intro">There is nothing to buy and no account to make. TotalClean looks at the storage on your phone and shows what can go.</p>
+<ol class="steps"><li><h3>Scan</h3><p>Quick Clean finds caches, empty folders, spare install files, leftovers from removed apps and more.</p></li><li><h3>Choose</h3><p>Junk is ticked for you. Your own photos, videos and files are only removed if you tick them.</p></li><li><h3>Clean</h3><p>TotalClean removes what you chose and measures how much space really came back.</p></li></ol>
+</div>
+</section>
+
+<section id="features" aria-labelledby="features-h">
+<div class="wrap">
+<h2 id="features-h">Everything is in, and all of it is free</h2>
+<p class="intro">Nothing below is held back for a paid tier, because there is no paid tier.</p>
+<div class="groups"><div class="group"><h3>Cleaning</h3><dl><div><dt>Quick Clean</dt><dd>Caches, advert caches, empty folders, spare install files and leftovers from removed apps.</dd></div><div><dt>Deep Clean</dt><dd>Clears every app's hidden cache in one go, then measures how much really went.</dd></div><div><dt>Safety bin</dt><dd>Anything of yours that is removed waits 30 days and goes back with one tap.</dd></div><div><dt>Automatic cleaning and rules</dt><dd>Off until you switch it on. Junk only, overnight, plus rules such as screenshots older than 30 days.</dd></div></dl></div><div class="group"><h3>Photos and media</h3><dl><div><dt>Similar shots</dt><dd>The sharpest picked out, with blurred, dark and duplicate photos found for you.</dd></div><div><dt>Swipe review and Photo Optimiser</dt><dd>Keep or remove with a swipe, and shrink photos you want to keep.</dd></div><div><dt>Chat media</dt><dd>Clear chat pictures, videos and voice notes by type.</dd></div></dl></div><div class="group"><h3>Space</h3><dl><div><dt>Google Drive</dt><dd>Move files to a tidy folder in your own Drive. Each is checked against its Drive copy before it is offered for removal.</dd></div><div><dt>Storage forecast</dt><dd>How fast storage is filling, when it will be full, and which apps are growing.</dd></div><div><dt>Storage map</dt><dd>Walk through storage folder by folder.</dd></div></dl></div><div class="group"><h3>Phone</h3><dl><div><dt>Sleep Mode</dt><dd>Stops the apps you choose. Messaging, alarm, banking, health and security apps start off protected.</dd></div><div><dt>Vault</dt><dd>Finds photos of passports, bank cards and other papers and locks them away behind a PIN only you know.</dd></div><div><dt>Security tips</dt><dd>Checks of the phone's own settings, each with a button to the fix.</dd></div><div><dt>Widget and quick tile</dt><dd>Free space on the home screen and a one-tap clean.</dd></div></dl></div></div>
+</div>
+</section>
+
+<section id="privacy" aria-labelledby="privacy-h">
+<div class="wrap">
+<h2 id="privacy-h">Your phone is your business</h2>
+<ul class="plain"><li><h3>No servers</h3><p>TotalClean has no accounts and no servers. The developer receives nothing.</p></li><li><h3>Your own Drive</h3><p>Files go to Google Drive only if you connect it, and only to your own Drive.</p></li><li><h3>No ads, no tracking</h3><p>There is no advertising, analytics or tracking, in the app or on this site.</p></li></ul>
+</div>
+</section>
+
+<section id="install" aria-labelledby="install-h">
+<div class="wrap">
+<h2 id="install-h">Installing and updating</h2>
+<p class="intro">TotalClean is not on Google Play, so your phone asks a couple of extra questions the first time.</p>
+<ol class="steps"><li><h3>Download the app file</h3><p>Tap Download on your phone. The file is called TotalClean.apk and is about 23.5 MB. If Chrome says the file might be harmful, choose Download anyway.</p></li><li><h3>Allow the install</h3><p>Open the file. The first time, Android asks you to allow your browser to install apps. Allow it, go back and tap Install. If Google Play Protect steps in, choose More details, then Install anyway.</p></li><li><h3>Updating later</h3><p>TotalClean tells you when a newer version is out. Install the new file over the old one and everything you have saved is kept.</p></li></ol>
+<p class="after-table">Version 1.0.1, released 17 November 2026. See the <a href="releases.html">release notes</a>, or <a href="releases.html#checking">check your download</a>.</p>
+</div>
+</section>
+
+<section id="questions" aria-labelledby="questions-h">
+<div class="wrap">
+<h2 id="questions-h">Questions</h2>
+<div class="faq"><details><summary>Is TotalClean really free?</summary><p>Yes. There is no paid version, no subscription and no adverts. <a href="compare.html">See the comparison</a>.</p></details><details><summary>Will it delete my photos?</summary><p>Only if you tick them, or set a rule that covers them. Your own files go to the safety bin for 30 days and come back with one tap.</p></details><details><summary>Is there a memory booster?</summary><p>No. Emptying memory by hand slows a modern phone down, so TotalClean does not offer it.</p></details><details><summary>Does it scan for viruses?</summary><p>No. Security tips check the phone's own settings. They do not scan apps for malware.</p></details><details><summary>Why does it ask for so much access?</summary><p>A cleaner needs wide access to storage to find and remove files. Usage access measures each app's size and cache. None of it leaves the phone.</p></details><details><summary>What is the helper?</summary><p>Deep Clean, Sleep Mode and Browser Cleaner use a helper in Accessibility settings. The app shows how to switch it on. On Android 17 it cannot run while Advanced Protection is on.</p></details><details><summary>What if I forget my vault PIN?</summary><p>Nobody can open the vault without it, including the maker of the app. A forgotten PIN means the files in the vault cannot be got back.</p></details><details><summary>How do I update TotalClean?</summary><p>The app tells you when a new version is out. Download it from this site and install it over the old one; your settings and bin stay.</p></details></div>
+</div>
+</section>
+
+<section class="closing" aria-labelledby="closing-h">
+<div class="wrap">
+<div><h2 id="closing-h">A cleaner that shows its working</h2><p>Free, with no adverts and nothing to unlock. Made by the developer of several other free Android apps: <a href="more-apps.html">see them all</a>.</p></div>
+<a class="button" href="https://github.com/CustomGPTer/totalclean/releases/latest/download/TotalClean.apk"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10.5l5 5 5-5"/><path d="M5 20h14"/></svg>Download for Android</a>
+</div>
+</section>
 </main>
-<footer><p>TotalClean is free. No adverts, no accounts, no paid version.</p><p>Made by Jonathan Jackson · <a href="https://github.com/CustomGPTer/totalclean/issues">Report a problem</a></p></footer>
+<footer class="colophon">
+<div class="wrap">
+<div>
+<a class="brand" href="./" aria-label="TotalClean home"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0b0f14"/><circle cx="32" cy="32" r="19" fill="none" stroke="#35d0f2" stroke-width="6" stroke-linecap="round" stroke-dasharray="92 28" transform="rotate(-210 32 32)"/><path d="M32 22l3 7 7 3-7 3-3 7-3-7-7-3 7-3z" fill="#e9eef3"/></svg><span>TotalClean</span></a>
+<p>&copy; 2026 Jonathan Jackson. TotalClean is an independent app.</p>
+<p>This site uses no cookies and no tracking.</p>
+<p>Set in Bricolage Grotesque and Atkinson Hyperlegible.</p>
+</div>
+<nav aria-label="The app"><h2>The app</h2><ul>
+<li><a href="./">Home</a></li>
+<li><a href="./compare.html">Compare</a></li>
+<li><a href="./releases.html">Release notes</a></li>
+
+</ul></nav>
+<nav aria-label="Legal"><h2>Legal</h2><ul>
+<li><a href="./privacy.html">Privacy policy</a></li>
+<li><a href="./terms.html">Terms of use</a></li>
+<li><a href="./licences.html">Licences</a></li>
+</ul></nav>
+<nav aria-label="More"><h2>More</h2><ul>
+<li><a href="./more-apps.html">More apps</a></li>
+<li><a href="https://customgpter.github.io/">All apps</a></li>
+<li><a href="https://github.com/CustomGPTer/totalclean/issues">Contact</a></li>
+</ul></nav>
+</div>
+</footer>
 </body>
 </html>

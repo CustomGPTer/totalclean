@@ -1,45 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-GB">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Releases · TotalClean</title>
-<meta name="description" content="Every version of TotalClean and what changed.">
+<title>TotalClean release notes</title>
+<meta name="description" content="What changed in each version of TotalClean, with the file size and checksum to check your download.">
 <meta name="author" content="Jonathan Jackson">
 <link rel="canonical" href="https://customgpter.github.io/totalclean/releases.html">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<meta property="og:title" content="Releases · TotalClean">
-<meta property="og:description" content="Every version of TotalClean and what changed.">
-<meta property="og:image" content="https://customgpter.github.io/totalclean/assets/screens.png">
-<meta name="theme-color" content="#0b0f14">
-<link rel="stylesheet" href="assets/site.css">
+<meta name="theme-color" content="#f2f6f8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b0f14" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TotalClean">
+<meta property="og:title" content="TotalClean release notes">
+<meta property="og:description" content="What changed in each version of TotalClean, with the file size and checksum to check your download.">
+<meta property="og:url" content="https://customgpter.github.io/totalclean/releases.html">
+<meta property="og:image" content="https://customgpter.github.io/totalclean/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="TotalClean&#x27;s home screen showing free space and a Quick Clean button">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
+<link rel="preload" href="./assets/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="./assets/fonts/atkinson-hyperlegible-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="./assets/site.css?v=1">
+<link rel="stylesheet" href="./assets/house.css?v=1">
+<link rel="stylesheet" href="./assets/apps-list.css?v=1">
+<script src="./assets/apps-list.js?v=1" defer></script>
 </head>
 <body>
-<header><a class="brand" href="index.html"><img src="assets/favicon.svg" alt="" width="28" height="28">TotalClean</a><nav><a href="index.html">Home</a><a href="releases.html" class="on">Releases</a><a href="more-apps.html">More apps</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="licences.html">Licences</a></nav></header>
-<main>
-
-<h1>Releases</h1>
-<p><a class="button" href="https://github.com/CustomGPTer/totalclean/releases/latest/download/TotalClean.apk">Download the latest version</a></p>
-<h2>1.0.1 <span class="small">17 November 2026</span></h2>
-<ul>
-<li>Usage access and the helper are locked by Android for apps installed from a download. The app now sets out the three steps to unlock them, with a button for each, wherever it asks for either one.</li>
-</ul>
-<h2>1.0 <span class="small">17 November 2026</span></h2>
-<p>First public release.</p>
-<ul>
-<li>Quick Clean with a reason and a safety rating for every category, and a 30-day safety bin.</li>
-<li>Deep Clean, Sleep Mode and Browser Cleaner through the TotalClean helper.</li>
-<li>Storage, Apps (with multi-select uninstall and saving install files to Drive), storage map and chat media.</li>
-<li>Photos: similar sets, bad shots, exact duplicates, swipe review and a Photo Optimiser with a WebP option.</li>
-<li>Google Drive transfers, checked against the Drive copy before anything is removed.</li>
-<li>Automatic cleaning with rules, weekly report and low-space warning.</li>
-<li>Storage forecast, growing apps, device health and security tips.</li>
-<li>Encrypted vault with fingerprint unlock, private-file finder with Look inside pictures, and an optional app lock.</li>
-<li>Home screen widget, quick settings tile and your own choice of Home shortcuts.</li>
-</ul>
-<p class="small">Every version is on the <a href="https://github.com/CustomGPTer/totalclean/releases">GitHub releases page</a>.</p>
-
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<a class="brand" href="./" aria-label="TotalClean home"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0b0f14"/><circle cx="32" cy="32" r="19" fill="none" stroke="#35d0f2" stroke-width="6" stroke-linecap="round" stroke-dasharray="92 28" transform="rotate(-210 32 32)"/><path d="M32 22l3 7 7 3-7 3-3 7-3-7-7-3 7-3z" fill="#e9eef3"/></svg><span>TotalClean</span></a>
+<nav aria-label="Main"><ul><li><a href="./#features">Features</a></li><li><a href="./compare.html">Compare</a></li><li><a href="./releases.html" aria-current="page">Releases</a></li><li><a class="more-apps" href="./more-apps.html"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.6"/></svg>More apps</a></li></ul></nav>
+<a class="button small" href="https://github.com/CustomGPTer/totalclean/releases/latest/download/TotalClean.apk"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10.5l5 5 5-5"/><path d="M5 20h14"/></svg>Download</a>
+</div>
+</header>
+<main id="main" class="doc">
+<div class="wrap">
+<div class="measure">
+<h1>Release notes</h1>
+<p class="lede">What changed in each version of TotalClean. The newest is at the top.</p>
+<section class="release" id="v1.0.1"><h2><span class="ver">Version 1.0.1</span> <span class="when">17 November 2026</span><span class="tag">Latest</span></h2><ul><li>Usage access and the helper are locked by Android for apps installed from a download. The app now sets out the three steps to unlock them, with a button for each, wherever it asks for either one.</li></ul></section>
+<section class="release" id="v1.0"><h2><span class="ver">Version 1.0</span> <span class="when">17 November 2026</span></h2><ul><li><b>First public release.</b> Quick Clean with a reason and a safety rating for every category, and a 30-day safety bin.</li><li>Deep Clean, Sleep Mode and Browser Cleaner through the TotalClean helper.</li><li>Storage, Apps (with multi-select uninstall and saving install files to Drive), storage map and chat media.</li><li>Photos: similar sets, bad shots, exact duplicates, swipe review and a Photo Optimiser with a WebP option.</li><li>Google Drive transfers, checked against the Drive copy before anything is removed.</li><li>Automatic cleaning with rules, weekly report and low-space warning.</li><li>Storage forecast, growing apps, device health and security tips.</li><li>Encrypted vault with fingerprint unlock, private-file finder with Look inside pictures, and an optional app lock.</li><li>Home screen widget, quick settings tile and your own choice of Home shortcuts.</li></ul></section>
+<h2 id="checking">Checking your download</h2>
+<p>The file for version 1.0.1 is called <code>TotalClean.apk</code>. It is 23.5 MB (23,465,228 bytes). Its SHA-256 checksum is:</p>
+<p><code class="sum">6b476b4b9f5e32fcd4dad8817f8f9940fdfa138aca12dd2446ffb108191c8b64</code></p>
+<p>On Windows, run <code>certutil -hashfile TotalClean.apk SHA256</code> and compare. Every version is signed with the same key, so each one installs over the last and keeps what you have saved.</p>
+<p>Older versions are on the <a href="https://github.com/CustomGPTer/totalclean/releases">GitHub releases page</a>.</p>
+</div>
+</div>
 </main>
-<footer><p>TotalClean is free. No adverts, no accounts, no paid version.</p><p>Made by Jonathan Jackson · <a href="https://github.com/CustomGPTer/totalclean/issues">Report a problem</a></p></footer>
+<footer class="colophon">
+<div class="wrap">
+<div>
+<a class="brand" href="./" aria-label="TotalClean home"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0b0f14"/><circle cx="32" cy="32" r="19" fill="none" stroke="#35d0f2" stroke-width="6" stroke-linecap="round" stroke-dasharray="92 28" transform="rotate(-210 32 32)"/><path d="M32 22l3 7 7 3-7 3-3 7-3-7-7-3 7-3z" fill="#e9eef3"/></svg><span>TotalClean</span></a>
+<p>&copy; 2026 Jonathan Jackson. TotalClean is an independent app.</p>
+<p>This site uses no cookies and no tracking.</p>
+<p>Set in Bricolage Grotesque and Atkinson Hyperlegible.</p>
+</div>
+<nav aria-label="The app"><h2>The app</h2><ul>
+<li><a href="./">Home</a></li>
+<li><a href="./compare.html">Compare</a></li>
+<li><a href="./releases.html">Release notes</a></li>
+
+</ul></nav>
+<nav aria-label="Legal"><h2>Legal</h2><ul>
+<li><a href="./privacy.html">Privacy policy</a></li>
+<li><a href="./terms.html">Terms of use</a></li>
+<li><a href="./licences.html">Licences</a></li>
+</ul></nav>
+<nav aria-label="More"><h2>More</h2><ul>
+<li><a href="./more-apps.html">More apps</a></li>
+<li><a href="https://customgpter.github.io/">All apps</a></li>
+<li><a href="https://github.com/CustomGPTer/totalclean/issues">Contact</a></li>
+</ul></nav>
+</div>
+</footer>
 </body>
 </html>
