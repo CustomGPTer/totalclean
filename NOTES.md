@@ -1,6 +1,8 @@
-Usage access and the helper are locked by Android for apps installed from a download rather than the Play Store.
+TotalClean 1.0.2 ties the app into TorusApps.com.
 
-- The app now sets out the three steps to unlock them, with a button for each: try the switch once, choose Allow restricted settings on TotalClean's app page, then switch it on
-- The steps show on the welcome page, the Apps list, Deep Clean, Sleep Mode, Browser Cleaner and in Settings
+- The update check now reads the signed app list on torusapps.com. When a newer version is out, Home shows Update available and opens the TotalClean page; nothing downloads inside the app.
+- More apps now opens torusapps.com; the app list inside TotalClean is gone.
+- Website, Privacy policy and Email in More, About point to torusapps.com, with a Developed by Jonathan Jackson line.
+- A short opening screen and an Android 12+ splash with the TotalClean icon.
 
-Android 11 or newer. Download TotalClean.apk below and open it to install. It installs over 1.0.
+Installs over the earlier version and keeps everything.
